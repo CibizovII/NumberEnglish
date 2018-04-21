@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">NumberEnglisch</string>
+    <string name="number_one">Первое число</string>
+    <string name="number_two">Второе число</string>
+    <string name="ButtonNew">Новое число</string>
+    <string name="textText">Сумма чисел</string>
+    <string name="chisloPlus" />
+    <string name="ButtonChisloText">Число на Английском</string>
+    <string name="English">Число на Английском</string>
+    <string name="ProverkaChislaBut">Проверить число</string>
+</resources>
