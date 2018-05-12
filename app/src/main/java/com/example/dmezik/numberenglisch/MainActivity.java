@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private int TwoChislo;
     private int SummaChisel;
     private String English;
-    private String Pidor;
+    private String Neznayu;
     Vibrator v;
     private int lastchislo;
 
@@ -54,12 +54,12 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void proberkaChisel() {
-        EditText port = findViewById(R.id.pidorText);
-        Pidor = port.getText().toString();
-        System.out.println(Pidor);
+        EditText port = findViewById(R.id.RuText);
+        Neznayu = port.getText().toString();
+        System.out.println(Neznayu);
         System.out.println(English);
 
-        if (Pidor.equals(English)) {
+        if (Neznayu.equals(English)) {
             Toast toast = Toast.makeText(getApplicationContext(),
                     "Поздравлеем ваше знание Английского языка на уровне перфект,можешь писать следующеее число",
                     Toast.LENGTH_SHORT);
