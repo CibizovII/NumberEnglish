@@ -23,12 +23,15 @@ public class MainActivity extends AppCompatActivity {
     Vibrator v;
     private int lastchislo;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         generateNewNumbers();
         v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        TextView EnglishName = findViewById(R.id.EnglishName);
+        EnglishName.setText("");
 
     }
 
@@ -48,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         TextView ChisloNumber = findViewById(R.id.summaChislo);
         ChisloNumber.setText(Integer.toString(SummaChisel));
         English = EnglishNumberToWords.convert(SummaChisel);
+        System.out.println(Neznayu);
+        System.out.println(English);
 
 
     }
@@ -56,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
     public void proberkaChisel() {
         EditText port = findViewById(R.id.RuText);
         Neznayu = port.getText().toString();
-        System.out.println(Neznayu);
-        System.out.println(English);
 
         if (Neznayu.equals(English)) {
             Toast toast = Toast.makeText(getApplicationContext(),
@@ -65,10 +68,12 @@ public class MainActivity extends AppCompatActivity {
                     Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
-            TextView EnglishName = findViewById(R.id.EnglishName);
-            EnglishName.setText("Последнее правильно написаное число: "+ English);
+            TextView EnglishName1 = findViewById(R.id.EnglishName);
+            EnglishName1.setText("Последнее правильно написаное число: "+ English);
             generateNewNumbers();
-           port.getText().clear();
+            port.getText().clear();
+            System.out.println(Neznayu);
+            System.out.println(English);
 
         } else {
             Toast toast = Toast.makeText(getApplicationContext(),
@@ -80,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
             //v.vibrate(effect);
             v.vibrate(100);
             port.getText().clear();
+            System.out.println(Neznayu);
+            System.out.println(English);
         }
     }
 

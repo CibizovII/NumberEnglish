@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
@@ -91,7 +91,7 @@
 
         <Button
             android:id="@+id/proverka"
-            android:layout_width="match_parent"
+            android:layout_width="202dp"
             android:layout_height="wrap_content"
             android:onClick="OnClickProverka"
             android:text="@string/ProverkaChislaBut" />
