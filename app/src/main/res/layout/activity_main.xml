@@ -7,22 +7,24 @@
     tools:context="com.example.dmezik.numberenglisch.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="365dp"
+        android:layout_height="500dp"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="43dp"
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:fontStyle="normal"
             android:text="@string/number_one"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -34,25 +36,38 @@
             android:id="@+id/number1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp
+            android:layout_marginTop="15dp"
             android:text="TextView"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:text="@string/number_two"
+            
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.203"
-            tools:layout_editor_absoluteX="0dp" />
+            tools:layout_editor_absoluteX="15dp" />
 
         <TextView
             android:id="@+id/number2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
             android:text="TextView"
             android:textSize="20sp"
             android:textStyle="bold" />
@@ -60,7 +75,13 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/textText" />
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/textText"
+            android:textSize="20sp" />
+
 
         <TextView
             android:id="@+id/summaChislo"
@@ -72,7 +93,13 @@
             android:id="@+id/EnglishName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/RuText"
@@ -83,18 +110,26 @@
 
         <Button
             android:id="@+id/button"
-            android:layout_width="match_parent"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginStart="1dp"
             android:onClick="ClickNew"
 
             android:text="@string/ButtonNew" />
 
         <Button
             android:id="@+id/proverka"
-            android:layout_width="202dp"
+            android:layout_width="203dp"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
             android:onClick="OnClickProverka"
             android:text="@string/ProverkaChislaBut" />
+
 
     </LinearLayout>
 
