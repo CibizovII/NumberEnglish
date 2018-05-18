@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (Neznayu.equals(English)) {
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "Поздравлеем ваше знание Английского языка на уровне перфект,можешь писать следующеее число",
+                    "Поздравляем, ваше знание Английского языка на уровне перфект,можешь писать следующеее число",
                     Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             Toast toast = Toast.makeText(getApplicationContext(),
-                    "ТЫ тупой и написал все неправльно твой телефон взорвется через 3 секунды ",
+                    "Ошибка число написано не верно,попробой снова",
                     Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();

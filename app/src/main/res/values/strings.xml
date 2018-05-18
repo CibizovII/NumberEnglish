@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">NumberEnglisch</string>
+    <string name="app_name">NumberEnglish</string>
     <string name="number_one">Первое число</string>
     <string name="number_two">Второе число</string>
     <string name="ButtonNew">Новое число</string>
